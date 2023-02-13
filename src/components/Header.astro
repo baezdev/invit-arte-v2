@@ -1,0 +1,24 @@
+---
+import Navbar from "./Navbar.astro";
+import { LinkButton } from "./LinkButton";
+---
+
+<header>
+  <Navbar />
+  <div class="mt-16 text-center">
+    <h1 class="font-semibold text-8xl">Invit Arte</h1>
+    <h2 class="text-6xl font-semibold">
+      Crea invitaciones a <span
+        class="relative inline-block before:block before:absolute before:-inset-2 before:-skew-y-3 before:bg-pink-500"
+        ><span class="relative font-bold text-white">tu estilo</span></span
+      >
+    </h2>
+    <p class="text-xl mt-14">
+      Plasma tus ideas y personaliza tus invitaciones <br /> de una forma facil y
+      sencilla.
+    </p>
+    <div class="mt-14">
+      <LinkButton text="comienza tu experiencia" href="#" />
+    </div>
+  </div>
+</header>
