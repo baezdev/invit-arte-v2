@@ -1,0 +1,16 @@
+---
+import Container from "./Container.astro";
+import SubTitle from "./SubTitle.astro";
+import CardContent from "./CardContent.astro";
+
+import { invitationContent } from "../data/invitationContent.js";
+---
+
+<section class="mb-24" id="content">
+  <Container>
+    <SubTitle subtitle="Esto puede incluir tu invitación" />
+    <div class="grid grid-cols-3 gap-6 px-28">
+      {invitationContent.map((content) => <CardContent {...content} />)}
+    </div>
+  </Container>
+</section>
