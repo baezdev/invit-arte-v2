@@ -1,0 +1,13 @@
+---
+import Container from "./Container.astro";
+import { NavLinks } from "./NavLinks";
+---
+
+<nav>
+  <Container>
+    <div class="flex justify-between h-24 items-center">
+      <a href="/">Inv</a>
+      <NavLinks client:load />
+    </div>
+  </Container>
+</nav>
