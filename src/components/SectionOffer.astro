@@ -1,0 +1,35 @@
+---
+import SubTitle from "./SubTitle.astro";
+import Container from "./Container.astro";
+import CardOffer from "./CardOffer.astro";
+
+const offers = [
+  {
+    title: "digital",
+    description:
+      "Accede a tus invitaciones desde cualquier dispositivo electrónico.",
+    icon: "device",
+  },
+  {
+    title: "diseño",
+    description:
+      "Crea tu propio diseño, envíanos tus ideas y nosotros nos encargamos de hacerlas realidad.",
+    icon: "pencil",
+  },
+  {
+    title: "ecológico",
+    description:
+      "Vive una nueva experiencia, cuidando nuestro planeta ¡Dile adiós al papel!",
+    icon: "cloud",
+  },
+];
+---
+
+<section class="mt-36 my-32">
+  <Container>
+    <SubTitle subtitle="La mejor opción para ti." />
+    <div class="grid justify-center grid-cols-3 gap-10">
+      {offers.map((offer) => <CardOffer {...offer} />)}
+    </div>
+  </Container>
+</section>
