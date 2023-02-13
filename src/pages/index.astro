@@ -1,7 +1,16 @@
 ---
-import Layout from '../layouts/Layout.astro';
+import Header from "@components/Header.astro";
+import SectionContents from "@components/SectionContents.astro";
+import SectionEvents from "@components/SectionEvents.astro";
+import SectionOffer from "@components/SectionOffer.astro";
+import SectionPlans from "@components/SectionPlans.astro";
+import Layout from "../layouts/Layout.astro";
 ---
 
-<Layout title="Invit.Arte">
-	<h1>Invitarte</h1>
+<Layout title="Invit Arte">
+  <Header />
+  <SectionOffer />
+  <SectionEvents />
+  <SectionContents />
+  <SectionPlans />
 </Layout>
