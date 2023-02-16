@@ -16,7 +16,7 @@ export const NavLinks = () => {
     },
     {
       text: "sobre nosotros",
-      href: "/about",
+      href: "#about",
     },
   ];
 
