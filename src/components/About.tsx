@@ -29,7 +29,7 @@ export const About = () => {
         ))}
       </div>
       <article class="flex gap-14 items-center">
-        //Todo: Hacer que tenga un delay al mostrar la seccion
+        {/* Todo: Hacer que tenga un delay al mostrar la seccion */}
         <div>
           <h4 class="text-center mb-6 font-semibold text-3xl pb-2 relative w-fit before:content-[''] before:h-1 before:w-14 before:bg-secon before:absolute before:bottom-0 before:left-0 before:rounded mx-auto">
             {selectedSection?.title}
