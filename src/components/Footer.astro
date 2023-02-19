@@ -1,0 +1,22 @@
+---
+import Container from "./Container.astro";
+import SocialMedia from "./SocialMedia.astro";
+
+const year = new Date().getFullYear();
+---
+
+<footer class="bg-black pt-10 pb-7 text-white">
+  <Container>
+    <div class="px-28">
+      <div class="flex justify-between items-center">
+        <a href="/" class="font-bold text-3xl">InvitArte</a>
+        <SocialMedia />
+      </div>
+      <div class="h-px bg-gray-200 w-full my-10 mx-auto rounded"></div>
+      <div class="flex justify-between items-center">
+        <span>Copyright © {year} InvitArte.</span>
+        <a href="/terminos">Aviso de privacidad I Términos y Condiciones</a>
+      </div>
+    </div>
+  </Container>
+</footer>
