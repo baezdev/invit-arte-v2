@@ -6,6 +6,8 @@ export const useTestimonial = () => {
   const [testimonialNumber, setTestimonialNumber] = useState(0);
   const [testimonialData, setTestimonialData] = useState<Testimonial>();
 
+  const totalTestimonials = testimonials.length;
+
   useEffect(() => {
     setTestimonialData(testimonials[testimonialNumber]);
   }, [testimonialNumber]);
@@ -38,6 +40,8 @@ export const useTestimonial = () => {
     name: testimonialData?.name,
     message: testimonialData?.message,
     stars,
+    totalTestimonials,
+    currentTestimonial: testimonialNumber,
     nextTestimonial,
     previusTestimonial,
   };
