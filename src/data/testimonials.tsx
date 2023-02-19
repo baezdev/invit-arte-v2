@@ -13,4 +13,10 @@ export const testimonials: Array<Testimonial> = [
       "Diseñaron la invitación de mi cumple y me encanto, muy profesionales, entregaron en tiempo y forma. Lo recomiendo si buscas algo original.",
     rating: 4,
   },
+  {
+    name: "Belem",
+    message:
+      "Personas sumamente profesionales, entregan en tiempo y saben perfectamente como plasmar tus ideas y deseos.Padrísima experiencia de trabajar con ellos.",
+    rating: 5,
+  },
 ];
