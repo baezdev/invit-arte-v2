@@ -15,7 +15,7 @@ export const NavLinks = () => {
       href: "/designs",
     },
     {
-      text: "sobre nosotros",
+      text: "conócenos",
       href: "#about",
     },
   ];
