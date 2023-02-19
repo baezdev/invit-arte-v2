@@ -16,7 +16,7 @@ export const About = () => {
     <>
       <div class="flex gap-5">
         {about.map(({ title, id }) => (
-          <span
+          <button
             class={`border-4 border-gray-200 leading-none inline-block font-semibold text-black px-4 py-3 rounded-3xl transition ease-in-out hover:scale-110 duration-300 capitalize cursor-pointer ${
               activeSection === title && "border-primary"
             }`}
@@ -25,7 +25,7 @@ export const About = () => {
             }
           >
             {title}
-          </span>
+          </button>
         ))}
       </div>
       <article class="flex gap-14 items-center">
