@@ -2,13 +2,13 @@ import { LinkButton } from "./LinkButton";
 
 export const NavLinks = () => {
   const links = [
-    {
+    /* {
       text: "tu invitacion tendra",
-      href: "#content",
-    },
+      href: "/#content",
+    }, */
     {
       text: "planes",
-      href: "#plans",
+      href: "/#plans",
     },
     {
       text: "diseños",
@@ -16,7 +16,11 @@ export const NavLinks = () => {
     },
     {
       text: "conócenos",
-      href: "#about",
+      href: "/#about",
+    },
+    {
+      text: "contáctanos",
+      href: "/contact",
     },
   ];
 
