@@ -1,8 +1,4 @@
-interface About {
-  id: string;
-  title: string;
-  desc: string;
-}
+import type { About } from "src/interfaces";
 
 export const about: Array<About> = [
   {

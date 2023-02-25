@@ -1,4 +1,6 @@
-export const invitationContent = [
+import type { InvitationContent } from "src/interfaces";
+
+export const invitationContent: Array<InvitationContent> = [
   {
     title: "Contador",
     desc: "Permite que tus invitados estén notificados de los días que falten para el evento.",

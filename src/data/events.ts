@@ -1,4 +1,6 @@
-export const events = [
+import type { Event } from "src/interfaces";
+
+export const events: Array<Event> = [
   {
     eventName: "boda",
     image: "boda",
