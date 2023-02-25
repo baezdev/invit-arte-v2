@@ -1,50 +1,35 @@
 ---
 import Container from "./Container.astro";
 import SubTitle from "./SubTitle.astro";
+import CardPlan from "./CardPlan.astro";
+
+const plans = [
+  {
+    href: "#",
+    img: "plan1",
+    title: "Basico",
+    icon: "basico",
+    description: "Escoge de entre un conjunto de plantillas prediseñadas",
+    price: "Gratis",
+    color: "pink",
+  },
+  {
+    href: "#",
+    img: "plan2",
+    title: "Premium",
+    icon: "premium",
+    description: "Ponte en contacto para obtener una invitación personalizada",
+    price: "$500.00 MXN",
+    color: "purple",
+  },
+];
 ---
 
 <section class="mb-24" id="plans">
   <Container>
     <SubTitle subtitle="nuestros planes" />
     <div class="flex justify-center gap-10">
-      <a
-        href="#"
-        class="block w-[425px] border-4 rounded-3xl hover:scale-105 transition-all duration-200 ease-in-out hover:border-third [&_img]:hover:grayscale-0 [&_div]:hover:opacity-100"
-      >
-        <img src="/images/plan1.svg" alt="" class="grayscale mx-6" />
-        <p
-          class="font-bold text-4xl text-center flex items-center gap-2 justify-center"
-        >
-          Basico <span><img src="/icons/basico.svg" alt="" /></span>
-        </p>
-        <p class="text-center mt-5">
-          Escoge de entre un conjunto de plantillas prediseñadas
-        </p>
-        <div class="h-[2.5px] bg-gray-300 w-28 my-5 mx-auto rounded"></div>
-        <p class="text-center font-semibold text-2xl">Gratis</p>
-        <div class="py-3 bg-third mt-5 rounded-b-2xl opacity-0" id="loquiero">
-          <p class="text-center font-medium text-lg text-white">Lo quiero</p>
-        </div>
-      </a>
-      <a
-        href="#"
-        class="block w-[425px] border-4 rounded-3xl hover:scale-105 transition-all duration-200 ease-in-out hover:border-primary [&_img]:hover:grayscale-0 [&_div]:hover:opacity-100"
-      >
-        <img src="/images/plan2.svg" alt="" class="grayscale mx-6" />
-        <p
-          class="font-bold text-4xl text-center flex items-center gap-2 justify-center"
-        >
-          Premium <span><img src="/icons/premium.svg" alt="" /></span>
-        </p>
-        <p class="text-center mt-5">
-          Ponte en contacto para obtener una invitación personalizada
-        </p>
-        <div class="h-[2.5px] bg-gray-300 w-28 my-5 mx-auto rounded"></div>
-        <p class="text-center font-semibold text-2xl">$500.00 MXN</p>
-        <div class="py-3 bg-primary mt-5 rounded-b-2xl opacity-0" id="loquiero">
-          <p class="text-center font-medium text-lg text-white">Lo quiero</p>
-        </div>
-      </a>
+      {plans.map((plan) => <CardPlan {...plan} />)}
     </div>
   </Container>
 </section>
