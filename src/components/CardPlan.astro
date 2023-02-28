@@ -19,7 +19,9 @@ const colors = {
 
 <a
   href={href}
-  class={`block w-[425px] border-4 rounded-3xl hover:scale-105 transition-all duration-200 ease-in-out hover:border-${colors[color]} [&_img]:hover:grayscale-0 [&_div]:hover:opacity-100`}
+  class={`block w-[425px] border-4 rounded-3xl hover:scale-105 transition-all duration-200 ease-in-out ${
+    color === "pink" ? "hover:border-third" : "hover:border-primary"
+  }  [&_img]:hover:grayscale-0 [&_div]:hover:opacity-100`}
 >
   <img src={`/images/${img}.svg`} alt="" class="grayscale mx-6" />
   <p
