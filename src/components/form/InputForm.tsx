@@ -6,9 +6,10 @@ interface Props {
   type: string;
   holder: string;
   icon: JSX.Element;
+  done?: boolean;
 }
 
-export const InputForm = ({ name, label, type, holder, icon }: Props) => {
+export const InputForm = ({ name, label, type, holder, icon, done }: Props) => {
   const [inputType, setInputType] = useState(type);
 
   function showPassword() {
@@ -27,8 +28,7 @@ export const InputForm = ({ name, label, type, holder, icon }: Props) => {
           className="flex-1 text-lg font-medium bg-transparent outline-none"
           placeholder={holder}
         />
-        {/* <img src="/icons/check.svg" alt="" /> */}
-        {name === "password" && (
+        {type === "password" && (
           <button
             className="px-4 py-1 text-xs font-semibold border rounded-lg text-primary border-primary bg-primary bg-opacity-10"
             type="button"
@@ -37,6 +37,7 @@ export const InputForm = ({ name, label, type, holder, icon }: Props) => {
             Ver
           </button>
         )}
+        {done && <img src="/icons/check.svg" alt="" />}
       </div>
     </>
   );
