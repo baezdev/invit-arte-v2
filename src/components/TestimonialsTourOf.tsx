@@ -11,10 +11,10 @@ export const TestimonialsTourOf = ({ total, current }: Props) => {
   }
 
   return (
-    <div class="absolute -bottom-8 flex gap-3">
+    <div className="absolute -bottom-8 flex gap-3">
       {number.map((n, i) => (
         <span
-          class={`w-3 h-3 ${
+          className={`w-3 h-3 ${
             current === i ? "bg-third" : "bg-gray-200"
           } rounded-full inline-block`}
         ></span>

@@ -1,4 +1,4 @@
-import { useState, useEffect } from "preact/hooks";
+import { useState, useEffect } from "react";
 import { testimonials } from "src/data/testimonials";
 import type { Testimonial } from "src/interfaces";
 
