@@ -4,9 +4,6 @@ import { LinkButton } from "./LinkButton";
 
 export const NavLinks = () => {
   const [openMenu, setOpenMenu] = useState(false);
-  /* ${
-    !openMenu ? "hidden" : "flex"
-  } */
 
   const links = [
     {
@@ -29,12 +26,12 @@ export const NavLinks = () => {
 
   return (
     <div>
-      <button className="md:hidden" onClick={() => setOpenMenu(!openMenu)}>
+      <button className="md:hidden z-30" onClick={() => setOpenMenu(!openMenu)}>
         {!openMenu ? <Menu /> : <Close />}
       </button>
       <ul
-        className={`absolute right-0 flex flex-col items-center w-full gap-20 pb-14 text-lg font-medium capitalize bg-white cursor-pointer md:w-fit md:static md:pb-0 md:items-center md:flex-row md:gap-7 top-24 ${
-          !openMenu ? "hidden" : "flex"
+        className={`absolute right-0 flex flex-col items-center w-full gap-20 pb-14 text-lg font-medium capitalize bg-white cursor-pointer md:w-fit md:static md:pb-0 md:items-center md:flex-row md:gap-7 transition-all duration-200 ease-in-out z-0 shadow-sm md:sh ${
+          !openMenu ? "-top-[540px]" : "top-28"
         }`}
       >
         {links.map(({ text, href }) => (

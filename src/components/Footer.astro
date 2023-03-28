@@ -9,12 +9,12 @@ const year = new Date().getFullYear();
   <Container>
     <div>
       <div class="flex justify-between items-center">
-        <a href="/" class="font-bold text-3xl">InvitArte</a>
+        <a href="/" class="font-bold text-xl md:text-3xl">InvitArte</a>
         <SocialMedia />
       </div>
       <div class="h-px bg-gray-200 w-full my-10 mx-auto rounded"></div>
-      <div class="flex justify-between items-center">
-        <span>Copyright © {year} InvitArte.</span>
+      <div class="flex flex-col md:flex-row justify-center text-center md:justify-between items-center">
+        <span class="mb-3 md:mb-0">Copyright © {year} InvitArte.</span>
         <a href="/terminos">Aviso de privacidad I Términos y Condiciones</a>
       </div>
     </div>

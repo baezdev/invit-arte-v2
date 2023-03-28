@@ -11,7 +11,7 @@ export const TestimonialsTourOf = ({ total, current }: Props) => {
   }
 
   return (
-    <div className="absolute -bottom-8 flex gap-3">
+    <div className="flex gap-3">
       {number.map((n, i) => (
         <span
           className={`w-3 h-3 ${

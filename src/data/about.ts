@@ -3,7 +3,7 @@ import type { About } from "src/interfaces";
 export const about: Array<About> = [
   {
     id: "about",
-    title: "Sobre Nosotros",
+    title: "Nosotros",
     desc: `Invita Arte es un proyecto que surge a partir de la necesidad de crear y distribuir invitaciones para todo tipo de eventos.
     En este sitio cualquier usuario podrá crear invitacionespersonalizadas, dando a conocer de una forma fácil y clara losdetalles de su evento (fecha, hora, localización, vestimenta,entre otros) y enviarlas a sus contactos por medio de redes sociales o correo electrónico.`,
   },

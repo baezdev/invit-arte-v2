@@ -11,9 +11,9 @@ const { title, icon, description } = Astro.props;
     alt={title}
   />
   <p
-    class="mb-6 text-3xl font-medium capitalize pb-2 relative w-fit text-center before:content-[''] before:h-1 before:w-14 before:bg-secon before:absolute before:bottom-0 before:left-0 before:rounded mx-auto"
+    class="mb-6 text-xl md:text-3xl font-medium capitalize pb-2 relative w-fit text-center before:content-[''] before:h-1 before:w-14 before:bg-secon before:absolute before:bottom-0 before:left-0 before:rounded mx-auto"
   >
     {title}
   </p>
-  <p class="text-lg">{description}</p>
+  <p class="text-base md:text-lg">{description}</p>
 </div>

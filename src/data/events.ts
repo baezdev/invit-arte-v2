@@ -14,7 +14,7 @@ export const events: Array<Event> = [
     image: "baby-shower",
   },
   {
-    eventName: "despedida de solter@",
+    eventName: "despedidas",
     image: "despedida-soltera",
   },
   {
